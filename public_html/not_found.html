@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Errore di Accesso</title>
+    <style>
+        /* 1. PAGINA DI SFONDO */
+        body {
+            font-family: Arial, sans-serif;
+            /* Mette l'immagine della strada sullo sfondo */
+            background-image: url('image2.jpg'); 
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            
+            /* Centra il box al centro perfetto dello schermo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* 2. IL BOX BIANCO DELL'ERRORE */
+        .box-errore {
+            background-color: white;    /* Sfondo bianco solido così si legge benissimo */
+            padding: 30px;              /* Spazio interno tra il testo e i bordi */
+            border-radius: 8px;         /* Arrotonda leggermente gli angoli del box */
+            width: 350px;               /* Larghezza fissa del box */
+            text-align: center;         /* Centra tutto il testo e il bottone all'interno */
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.3); /* Un'ombra nera leggera sotto il box */
+        }
+
+        /* 3. IL TESTO DI AVVISO */
+        .testo-errore {
+            color: #d9534f;             /* Colore rosso per indicare l'errore */
+            font-size: 18px;            /* Grandezza del testo */
+            font-weight: bold;          /* Testo in grassetto */
+            margin-bottom: 20px;        /* Spazio vuoto sotto il testo prima del bottone */
+        }
+
+        /* 4. IL BOTTONE PER TORNARE INDIETRO */
+        .bottone-ritorna {
+            display: block;             /* Fa comportare il link come un blocco/rettangolo */
+            background-color: #333333;  /* Colore del bottone (grigio scuro) */
+            color: white;               /* Colore del testo dentro il bottone */
+            padding: 12px;              /* Spazio interno al bottone (lo rende cicciotto) */
+            text-decoration: none;      /* Toglie la linea sotto al link */
+            border-radius: 4px;         /* Angoli del bottone leggermente arrotondati */
+            font-weight: bold;          /* Testo del bottone in grassetto */
+        }
+
+        /* Quando passi il mouse sopra il bottone, cambia colore */
+        .bottone-ritorna:hover {
+            background-color: #555555;  /* Diventa un grigio più chiaro */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box-errore">
+        
+        <p class="testo-errore">
+            Utente non trovato <br> o Password errata!
+        </p>
+        
+        <a href="../Progetto/" class="bottone-ritorna">Torna al login</a>
+        
+    </div>
+
+</body>
+</html>
